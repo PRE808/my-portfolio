@@ -38,3 +38,66 @@ footer {
   text-align: center;
   padding: 1rem;
 }
+
+/* ============================== */
+/* Extra styling for interactivity */
+/* ============================== */
+
+.project {
+  background: #fff;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+button.toggle-details {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.toggle-details:hover {
+  background-color: #555;
+}
+
+.hidden {
+  display: none;
+}
+
+#contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 400px;
+}
+
+#contactForm input,
+#contactForm textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#contactForm button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+#contactForm button:hover {
+  background-color: #555;
+}
+
+#formMessage {
+  margin-top: 0.5rem;
+  font-weight: bold;
+}

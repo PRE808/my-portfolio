@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>My Portfolio</title>
   <link rel="stylesheet" href="css/styles.css" />
+  <script src="script.js" defer></script>
 </head>
 <body>
   <header>
@@ -23,14 +24,45 @@
     <p>Hello! I’m a web development student learning to build websites from scratch. I love creating clean, simple designs and exploring new technologies.</p>
   </section>
 
+  <!-- PROJECT GALLERY -->
   <section id="projects">
     <h2>Projects</h2>
-    <p>Project section coming soon!</p>
+
+    <div class="project">
+      <h3>Personal Portfolio</h3>
+      <p>A responsive portfolio built using HTML and CSS.</p>
+      <button class="toggle-details">Show Details</button>
+      <div class="details hidden">
+        <p>This project taught me about layouts, navigation bars, and responsive design using CSS media queries.</p>
+      </div>
+    </div>
+
+    <div class="project">
+      <h3>JavaScript Practice App</h3>
+      <p>A small app to practice JavaScript basics.</p>
+      <button class="toggle-details">Show Details</button>
+      <div class="details hidden">
+        <p>This app includes interactive features like click events and dynamic content updates.</p>
+      </div>
+    </div>
   </section>
 
+  <!-- CONTACT FORM -->
   <section id="contact">
-    <h2>Contact</h2>
-    <p>Contact form will be added later. For now, reach out via email.</p>
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit">Send Message</button>
+      <p id="formMessage"></p>
+    </form>
   </section>
 
   <footer>
