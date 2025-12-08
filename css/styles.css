@@ -1,5 +1,3 @@
-/* style.css */
-
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -71,8 +69,7 @@ footer {
   }
 }
 
-
-
+/* Project Gallery */
 .project {
   background: #fff;
   margin-bottom: 1rem;
@@ -95,10 +92,20 @@ button.toggle-details:hover {
   background-color: #555;
 }
 
-.hidden {
-  display: none;
+/* Smooth toggle animation */
+.details {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+  padding: 0 1rem;
 }
 
+.details:not(.hidden) {
+  max-height: 200px;
+  padding: 1rem;
+}
+
+/* Contact Form */
 #contactForm {
   display: flex;
   flex-direction: column;
@@ -111,6 +118,16 @@ button.toggle-details:hover {
   padding: 0.5rem;
   border: 1px solid #ccc;
   border-radius: 4px;
+}
+
+#contactForm input:invalid,
+#contactForm textarea:invalid {
+  border-color: red;
+}
+
+#contactForm input:valid,
+#contactForm textarea:valid {
+  border-color: green;
 }
 
 #contactForm button {
